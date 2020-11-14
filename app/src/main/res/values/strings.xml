@@ -17,8 +17,8 @@
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="nav_item_activity_titles">
         <item>Home</item>
-        <item>Photos</item>
-        <item>Movies</item>
+        <item>Generator</item>
+        <item>Commander</item>
         <item>Notifications</item>
         <item>Settings</item>
     </string-array>
