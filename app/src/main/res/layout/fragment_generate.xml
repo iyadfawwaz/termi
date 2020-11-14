@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sy.iyad.sybox.fragment.Generator">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="@dimen/d5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/d5">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listax"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="@dimen/d5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/wa"
+                    android:background="@color/teal_700"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d4"/>
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/adet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/adet"
+                    android:inputType="number"
+                    android:fontFamily="serif-monospace"
+                    android:autofillHints="@string/app_name" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/lengthu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/userlength"
+                    android:inputType="number"
+                    android:fontFamily="serif-monospace"
+                    android:autofillHints="@string/app_name" />
+
+                <EditText
+                    android:textColor="#c55c55"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/prefix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prefex"
+                    android:fontFamily="sans-serif-light"
+                    android:autofillHints="@string/app_name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/lengthp"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/passlength"
+                    android:inputType="number"
+                    android:fontFamily="serif-monospace"
+                    android:autofillHints="@string/app_name" />
+
+                <Spinner
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/spinner"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:textColor="@color/white"
+                    android:id="@+id/genbtn"
+                    android:background="@color/teal_700"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/generate"
+                    android:fontFamily="serif-monospace"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
