@@ -1,7 +1,6 @@
 package sy.iyad.sybox.Utils;
 
 
-
 public class ExpandedMenuModel {
 
     private String iconName;

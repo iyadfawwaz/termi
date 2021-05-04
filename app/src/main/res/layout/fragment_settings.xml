@@ -9,6 +9,7 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:alpha="0.3"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="@string/app_name" />
 
 </FrameLayout>

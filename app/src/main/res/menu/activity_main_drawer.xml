@@ -32,9 +32,10 @@
                 <item android:id="@+id/address"
                     android:icon="@android:drawable/btn_star_big_off"
                     android:title="@string/address"/>
-            <item android:title="ttt"
+            <item
                 android:id="@+id/sss"
-                android:icon="@drawable/ic_launcher_background"/>
+                android:icon="@drawable/ic_launcher_background"
+                android:title="@string/app_name" />
             </group>
         </menu>
 

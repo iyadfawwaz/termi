@@ -2,6 +2,7 @@ package sy.iyad.sybox;
 
 
 public class Token {
+
     private String token;
 
     private Token() {

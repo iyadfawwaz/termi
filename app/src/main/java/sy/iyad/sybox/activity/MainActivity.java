@@ -19,7 +19,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
@@ -31,7 +30,6 @@ import sy.iyad.sybox.fragment.Generator;
 import sy.iyad.sybox.fragment.HomeFragment;
 import sy.iyad.sybox.fragment.Ip;
 import sy.iyad.sybox.fragment.Pager;
-import sy.iyad.sybox.other.CircleTransform;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -64,20 +62,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar =  findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         mHandler = new Handler();
 
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        navigationView = (NavigationView) findViewById(R.id.nav_view);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
+        drawer =  findViewById(R.id.drawer_layout);
+        navigationView =  findViewById(R.id.nav_view);
+        fab =  findViewById(R.id.fab);
 
         View navHeader = navigationView.getHeaderView(0);
-        txtName = (TextView) navHeader.findViewById(R.id.name);
-        txtWebsite = (TextView) navHeader.findViewById(R.id.website);
-        imgNavHeaderBg = (ImageView) navHeader.findViewById(R.id.img_header_bg);
-        imgProfile = (ImageView) navHeader.findViewById(R.id.img_profile);
+
+        txtName =  navHeader.findViewById(R.id.name);
+
+        txtWebsite =  navHeader.findViewById(R.id.website);
+        imgNavHeaderBg =  navHeader.findViewById(R.id.img_header_bg);
+        imgProfile =  navHeader.findViewById(R.id.img_profile);
 
         activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
 
@@ -106,17 +106,26 @@ public class MainActivity extends AppCompatActivity {
         txtName.setText("Ravi Tamada");
         txtWebsite.setText("www.androidhive.info");
 
+        /*
         Glide.with(this).load(urlNavHeaderBg)
                 .crossFade()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(imgNavHeaderBg);
 
+         */
+
+        Glide.with(this).load(urlNavHeaderBg).into(imgNavHeaderBg);
+        /*
         Glide.with(this).load(urlProfileImg)
                 .crossFade()
                 .thumbnail(0.5f)
                 .bitmapTransform(new CircleTransform(this))
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(imgProfile);
+
+         */
+        Glide.with(this).load(urlProfileImg).into(imgProfile);
+
 
         navigationView.getMenu().getItem(3).setActionView(R.layout.menu_dot);
     }

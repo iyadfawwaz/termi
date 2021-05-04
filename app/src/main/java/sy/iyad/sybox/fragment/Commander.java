@@ -30,7 +30,7 @@ import sy.iyad.mikrotik.Models.ExecutionEventListener;
 import sy.iyad.sybox.R;
 import sy.iyad.sybox.Utils.ServerAdapter;
 
-import static sy.iyad.sybox.ServerInformations.SERVERKEYWORDS;
+import static sy.iyad.sybox.ServerInformations.SERVER_KEYWORDS;
 
 
 public class Commander extends Fragment {
@@ -55,7 +55,7 @@ public class Commander extends Fragment {
         recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
-        stringArrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_dropdown_item_1line, SERVERKEYWORDS);
+        stringArrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_dropdown_item_1line, SERVER_KEYWORDS);
         comm.setAdapter(stringArrayAdapter);
         comm.setTokenizer(new SlashTokenizer());
         comm.setThreshold(1);

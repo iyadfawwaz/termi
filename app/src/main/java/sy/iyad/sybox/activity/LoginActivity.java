@@ -58,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                 registerId();
             }
         });
+
         button.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {

@@ -1,9 +1,18 @@
 package sy.iyad.sybox;
 
 
-public class ServerInformations {
+public abstract class ServerInformations {
 
-    public static final String[] SERVERKEYWORDS={
+    public static final String USER_PROFILES = "/tool/user-manager/profile/print";
+    public static final String CPU_COMMAND = "/system/resource/cpu/print";
+    public static final String UPTIME_COMMAND = "/system/resource/print return uptime";
+    public static final String VOLTAGE_COMMAND = "/system/health/print return voltage";
+    public static final String RUNNING_TRUE = "/interface/print where running=true";
+    public static String IP = "2.2.2.2";
+    public static String ADMIN = "admin";
+    public static String PASSWORD="";
+
+    public static final String[] SERVER_KEYWORDS={
             "system",
             "caps-man"    , "console" , "file"    ,   "ip"  ,  "log"     ,    "mpls"    ,  "partitions" , "ppp"  ,  "ra",
             "certificate" , "disk"  ,   "interface" , "ipv6" , "metarouter" , "openflow"  ,"port"    ,    "queue" , "ro",
@@ -30,12 +39,4 @@ public class ServerInformations {
             "e-mail"   ,         "netwatch"   , "sniffer" , "user-manager"          ,      "ip-scan"  ,   "ping-speed",  "snmp-walk" , "traceroute"
 
     };
-    public static final String USER_PROFILES = "/tool/user-manager/profile/print";
-    public static final String CPU_COMMAND = "/system/resource/cpu/print";
-    public static final String UPTIME_COMMAND = "/system/resource/print return uptime";
-    public static final String VOLTAGE_COMMAND = "/system/health/print return voltage";
-    public static final String RUNNING_TRUE = "/interface/print where running=true";
-    public static String IP = "2.2.2.2";
-    public static String ADMIN = "admin";
-    public static String PASSWORD="";
 }

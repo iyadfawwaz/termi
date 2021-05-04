@@ -28,7 +28,6 @@ import sy.iyad.sybox.R;
 import sy.iyad.sybox.Utils.Users;
 import sy.iyad.sybox.Utils.UsersAdapter;
 import sy.iyad.sybox.Utils.UsersIntRandom;
-
 import static sy.iyad.sybox.ServerInformations.USER_PROFILES;
 
 

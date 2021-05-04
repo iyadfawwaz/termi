@@ -10,27 +10,20 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
-
 import java.util.HashMap;
 import java.util.List;
-
 import sy.iyad.sybox.R;
 
 
 public class ExpandableAdapter extends BaseExpandableListAdapter {
 
-    private Context context;
-    private List<ExpandedMenuModel> menuModels;
-    private HashMap<ExpandedMenuModel,List<String>> listHashMap;
-    private ExpandableListView listView;
+    private final List<ExpandedMenuModel> menuModels;
+    private final HashMap<ExpandedMenuModel,List<String>> listHashMap;
 
     public ExpandableAdapter(@NonNull Context context,@NonNull List<ExpandedMenuModel> menuModels,@NonNull HashMap<ExpandedMenuModel,List<String>> listHashMap,@NonNull ExpandableListView listView){
 
-        this.context = context;
         this.listHashMap = listHashMap;
-        this.listView = listView;
         this.menuModels = menuModels;
     }
     @Override

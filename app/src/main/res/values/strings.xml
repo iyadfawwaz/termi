@@ -62,4 +62,5 @@
     <string name="adet">عدد المستخدمين</string>
     <string name="turn">تشغيل المستعرض</string>
     <string name="address">address</string>
+    <string name="ok">Ok</string>
 </resources>
